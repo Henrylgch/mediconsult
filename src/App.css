@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-layout {
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  background-color: #010440;
+}
+
+/* Dashboard */
+.dashboard {
+  width: 300px;
+  height: 100vh;
+  color: #FFF;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+
+.dashboard-options-list {
+  list-style-type: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+.dashboard-options-list li {
+  margin-top: 10px;
+}
+
+.links {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* Main */
+
+.main {
+  background-color: #FAFAFA;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  right: 100;
+}
+
+.main-body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.main-body-right, .main-body-left {
+  width: 300px;
+}
+
+/* Formulario para agendar nueva cita */
+.dateForm-container {
+  max-width: 400px;
+}
+
+.dateForm-container form {
+ text-align: left;
+}
+
+.inputForm-container {
+  margin: 15px 0;
+}
+
+.inputForm-container input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.inputForm-container textarea{
+  width: 100%;
+}
+
+.dateForm-container form button {
+  padding: 10px;
+  width: 150px;
+  background-color: #19a25b;
   color: white;
+  font-weight: bold;
+  font-size: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.warning {
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: red;
+  opacity: .6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dateCalendar-container {
+  width: 100%;
+  border: 1px solid #DADADA;
+  text-align: left;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.dateCalendar-container div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.x-buttonClose {
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.x-buttonClose:focus {
+  outline: none;
 }
